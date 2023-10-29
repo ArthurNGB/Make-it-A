@@ -1,0 +1,293 @@
+body{
+color: #d5d5d5;
+background-color: #343434;
+font-family: 'Inter', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+h3{
+padding: 0;
+margin: 0;
+margin-left: 0.5%;
+font-weight: lighter;
+}
+
+p{
+padding: 0;
+margin: 0;   
+font-size: 12px; 
+}
+
+
+.header-buttons{
+display: flex;
+position: relative;
+height: 9vh;
+width: 100%;
+margin-left: 0;
+align-items: center;
+justify-content: space-between;
+}
+
+.header-buttons-2{
+display: flex;
+position: relative;
+height: 9vh;
+width: 20%;
+margin-left: 0;
+align-items: center;
+justify-content: space-between;
+}
+
+.p-header{
+margin-right: 5%;
+}
+
+#chk {
+display: none;
+}
+  
+.switch {
+margin-left: 5%;
+position: relative;
+background-color: #777;
+width: 40px;
+height: 20px;
+border-radius: 40px;
+display: flex;
+align-items: center;
+padding: 5px;
+transition: all .5s ease-in-out;
+cursor: pointer;
+}
+  
+.slider {
+position: absolute;
+background-color: white;
+border-radius: 50%;
+width: 20px;
+height: 20px;
+transition: all .5s ease-in-out;
+}
+  
+#chk:checked ~ .switch {
+background-color: rgb(0, 113, 161);
+}
+  
+#chk:checked ~ .switch .slider {
+transform: translateX(20px);
+}
+
+.div-user-img{
+height: inherit;
+width: 9vh;
+background-color: #d5d5d5;
+border-radius: 50%;
+margin-right: 5%;
+}
+
+.box-input-nav{
+display: flex;
+position: relative;
+align-items: center;
+height: 3vh;
+width: 40%;
+left: 30%;
+margin-bottom: 3vh;
+}
+
+.box-input-tarefa{
+position: relative;
+display: flex;
+align-items: center;
+height: inherit;
+width: 80%;
+background-color: white;
+border-radius: 6px;
+}
+
+.input-tarefa{
+width: 94%;
+height: inherit;
+background-color: #00000000;
+border-style: none;
+}
+
+.but-imp-1{
+border-style: none;
+display: flex;
+align-items: center;
+width: 5%;
+cursor: pointer;
+border-radius: 6px;
+height: inherit;
+}
+
+.but-imp-2{
+border-style: none;
+display: flex;
+align-items: center;
+height: inherit;
+width: 4%;
+margin-left: 0.5%;
+cursor: pointer;
+border-radius: 6px;
+}
+
+.but-imp-3{
+width: 15%;
+height: 117%;
+margin-left: 1%;
+cursor: pointer;
+border-radius: 6px;
+}
+
+.p-but-imp-3{
+font-size: 0.8em;
+}
+
+.bi-calendar{
+width: 100%;
+height: auto;
+}
+
+.bi-plus{
+width: 100%;
+height: auto;
+}
+
+.box{
+position: relative;
+left: 25%;
+margin-bottom: 1%;
+}
+
+.tarefa-atrasado{
+position: relative;
+height: 4.5vh;
+width: 50%;
+background-color: #242424;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0;
+margin: 0;
+border-radius: 8px;
+}
+
+.tarefa-semdata{
+position: relative;
+height: 4.5vh;
+width: 50%;
+background-color: #242424;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0;
+margin: 0;
+border-radius: 8px;
+}
+
+.tarefa-hoje{
+position: relative;
+height: 4.5vh;
+width: 50%;
+background-color: #242424;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0;
+margin: 0;
+border-radius: 8px;
+}
+
+.tarefa-mdum{
+position: relative;
+height: 4.5vh;
+width: 50%;
+background-color: #242424;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0;
+margin: 0;
+border-radius: 8px;
+}
+
+.button-tarefa{
+width: 15%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.but-check{
+border-style: none;
+background-color: #242424;
+cursor: pointer;
+}
+
+.bi-check-lg{
+color: white;
+height: inherit;
+width: inherit;
+}
+
+.but-pencil{
+border-style: none;
+background-color: #242424;
+cursor: pointer;
+}
+
+.bi-pencil-fill{
+color: white;
+height: inherit;
+width: inherit;
+}
+
+.but-trash{
+border-style: none;
+background-color: #242424;
+cursor: pointer;
+}
+
+.bi-trash3-fill{
+color: white;
+height: inherit;
+width: inherit;
+}
+
+.a-box-item-1{
+margin-left: 2%;
+}
+
+.a-box-item-2-1{
+margin-left: 2%;
+color: #C51010;
+}
+
+.sd-box-item-1{
+text-align: center;
+margin-left: 2%;
+}
+
+.h-box-item-1{
+margin-left: 2%;
+}
+
+.h-box-item-2{
+margin-left: 2%;
+}
+
+.em-box-item-1{
+margin-left: 2%;
+}
+
+.em-box-item-2{
+margin-left: 2%;
+}
+
+.button-tarefa{
+margin-right: 2%;
+}
