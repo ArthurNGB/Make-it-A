@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #343434;
+    font-family: 'Inter', sans-serif;
+}
+
+body input {
+    border: 0;
+    border-radius: .7em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+
+    margin-top: -1em;
+    margin-left: 1em;
+    gap: 1em;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration-line: none;
+}
+
+.container-user-nav {
+    display: flex;
+    align-items: center;
+
+    margin-top: .5em;
+    margin-right: 2em;
+    gap: 1em;
+}
+
+.container-user-nav p {
+    color: #fff;
+}
+
+.container-user-nav .perfil-image {
+    width: 5em;
+    height: 5em;
+
+    border-radius: 50%;
+    background-color: #868686;
+}
+
+/* Estilos para o botão de switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+    background-color: #007AFF; /* Cor de fundo quando ativado */
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* Esconde o input padrão */
+.switch input {
+    display: none;
+}
+
+/* Main */
+.container-add-task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .3em;
+}
+
+.container-add-task input {
+    width: 40em;
+    padding: .5em;
+
+    outline: none;
+}
+
+.container-add-task input::placeholder {
+    color: #868686;
+}
+
+.container-add-task button {
+    padding: .4em;
+
+    cursor: pointer;
+    border: none;
+    border-radius: .7em;
+}
+
+.container-add-task button:hover {
+    background-color: #999999;
+}
+
+.container-add-task button a {
+    color: #000;
+}
+
+.container-add-task button i {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Tasks */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1em;
+}
+
+.task:first-child {
+    margin-top: 1em;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+
+    width: 50em;
+    padding: 1em;
+
+    color: #fff;
+    list-style: none;
+    border-radius: 1em;
+    background-color: #242424;
+}
+
+.task > div {
+    display: flex;
+    gap: 1em;
+}
+
+.bi-check-lg {
+    font-size: 1.2em;
+}
+
+.bi-check-lg:hover {
+    color: green;
+}
+
+.bi-pencil-fill:hover {
+    color: rgb(53, 53, 146);
+}
+
+.bi-trash3-fill:hover {
+    color: #C51010;
+}
+
+.task > div > i {
+    cursor: pointer;
+}

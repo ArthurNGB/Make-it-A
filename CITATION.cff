@@ -1,0 +1,31 @@
+cff-version: 1.0.1
+message: Please cite this software using these metadata.
+title: 
+authors:
+  - family-names: Nunes
+    given-names: Arthur
+  - family-names: Castri
+    given-names: Eduardo
+  - family-names: Viana
+    given-names: Gustavo
+  - family-names: Francisco
+    given-names: João
+  - family-names: Arantes
+    given-names: Matheus
+  - family-names: Mendes
+    given-names: Renan
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Silva
+    given-names: Cleiton
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Mara
+    given-names: Luciana
+keywords:
+  - 
+  - 
+repository-code: 
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2022-07-14

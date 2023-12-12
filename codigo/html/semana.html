@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/codigo/styles/semana.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container-user-nav">
+            <button class="home-button">Home</button>
+            <label class="switch">
+                <input type="checkbox" name="theme" id="theme">
+                <span for="theme" class="slider"></span>
+            </label>
+            <p class="account">Hey, user</p>
+            <div class="perfil-image"></div>
+        </div><!--container-user-nav-->
+    </nav>
+    <main class="main-content">
+        <div class="conteudo">
+            <h2>Domingo</h2>
+                <ul class="listaTarefas domingo">
+                </ul>   
+        </div>
+        <div class="conteudo">
+            <h2>Segunda-Feira</h2>
+                <ul class="listaTarefas segunda">
+                </ul>   
+        </div>
+        <div class="conteudo">
+            <h2>Terça-Feira</h2>
+                <ul class="listaTarefas terca">
+                </ul>   
+        </div>
+        <div class="conteudo">
+            <h2>Quarta-Feira</h2>
+                <ul class="listaTarefas quarta">
+                </ul>   
+        </div>
+        <div class="conteudo">
+            <h2>Quinta-Feira</h2>
+                <ul class="listaTarefas quinta">
+                </ul>   
+        </div>
+        <div class="conteudo">
+            <h2>Sexta-Feira</h2>
+                <ul class="listaTarefas sexta">
+                </ul>   
+        </div>
+        <div class="conteudo">
+            <h2>Sábado</h2>
+                <ul class="listaTarefas sabado">
+                </ul>   
+        </div>
+    </main>
+    <div id="janelaEdicao">
+        <button id="janelaEdicaoBtnFechar">
+            <i class="fa fa-remove fa-2x"></i>
+        </button>
+        <h2 id="idTarefaEdicao">#1021</h2>
+        <hr>
+        <form>
+            <div class="frm-linha">
+                <label for="nome">Nome</label>
+                <input type="text" id="inputTarefaNomeEdicao">
+            </div>
+            <div class="frm-linha">
+                <button id="btnAtualizarTarefa">Salvar</button>
+            </div>
+        </form>
+    </div>
+    <div id="janelaEdicaoFundo"></div>
+
+    <script src="/codigo/js/semana.js"></script>
+</body>
+
+</html>

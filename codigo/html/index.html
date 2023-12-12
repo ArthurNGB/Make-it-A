@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu Inicial</title>
+    <meta name="description" content="Pagina do Menu Inicial">
+    <meta name="author" content="Make It">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" Wrel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container-options">
+                <input type="checkbox" id="chk" />
+                <label for="chk" class="switch">
+                    <span class="slider"></span>
+                </label>
+                <p class="account">Hey, User!</p>
+                <div class="container-logo account-img">
+                        
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-inputs">
+            <input type="text" class="input-task" placeholder="Adicione uma tarefa rápida">
+            <button class="custom-task"><i class="bi bi-plus"></i></button>
+            <button class="my-week">Minha semana</button>
+        </div>
+        <div class="container-tasks">
+        <details>
+            <summary>Atrasado</summary>
+            <div class="tasks">
+                <ul class="task-list late">
+
+                </ul>
+            </div>
+        </details>
+        <details>
+            <summary>Hoje</summary>
+            <div class="tasks">
+                <ul class="task- today">
+
+                </ul>
+            </div>
+        </details>
+        <details>
+            <summary>Amanhã</summary>
+            <div class="tasks">
+                <ul class="task- tomorrow">
+
+                </ul>
+            </div>
+        </details>
+        <details>
+            <summary>Tarefas</summary>
+            <div class="tasks">
+                <ul class="task-list all">
+
+                </ul>
+            </div>
+        </details>
+        <details>
+            <summary>Concluídas</summary>
+            <div class="tasks">
+                <ul class="task-list checked">
+
+                </ul>
+            </div>
+        </details>
+    </main>
+
+    <script src="/codigo/js/index.js"></script>
+</body>
+
+</html>

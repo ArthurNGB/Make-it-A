@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Tela de Conta">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/codigo/styles/conta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" Wrel="stylesheet">
+    <title>Make It</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container-options">
+                <input type="checkbox" id="chk" />
+                <label for="chk" class="switch">
+                    <span class="slider"></span>
+                </label>
+                <p class="account">Tela Principal</p>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <form>
+            <img src="../img/ft (1).png" alt="Picture placeholder" draggable="false">
+            <div class="container-input">
+                <label for="fname" class="nome">Nome:</label>
+                <input type="text" class="fname new-nome" name="fname" placeholder=" Alterar nome">
+            </div>
+
+            <div class="container-input">
+                <label for="fname" class="sobrenome">Sobrenome:</label>
+                <input type="text" class="fname new-sobrenome" name="fname" placeholder=" Alterar sobrenome">
+            </div>
+
+            <div class="container-input">
+                <label for="fname" class="email">Email:</label>
+                <input type="text" class="fname new-email" name="fname" placeholder=" Alterar email">
+            </div>
+
+            <div class="container-input">
+                <label for="fname" class="senha">Senha:</label>
+                <input type="text" class="fname new-senha" name="fname" placeholder=" Alterar senha">
+            </div>
+
+            <button class="change-user-data">Salvar</button>
+        </form>
+    </div>
+
+    <div class="out-buttons">
+        <button type="button" class="logout">Sair da Conta</button>
+        <button type="reset" class="delete-acc">Deletar Conta</button>
+    </div>
+
+    <script src="/codigo/js/conta.js"></script>
+</body>
+
+</html>

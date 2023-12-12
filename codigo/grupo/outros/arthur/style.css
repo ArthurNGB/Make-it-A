@@ -1,0 +1,356 @@
+:root{
+    --background-color: #343434;
+    --text-color: #ffffff;
+    --card-color: #242424;
+    --form-buttons: #868686;
+    --button-hover: #1f1e1e;
+}
+/* variaveis */
+
+
+
+body{
+color: #d5d5d5;
+background-color: var(--background-color);
+font-family: 'Inter', sans-serif;
+margin: 0;
+padding: 0;
+}
+
+h3{
+padding: 0;
+margin: 0;
+margin-left: 0.5%;
+font-weight: lighter;
+}
+
+p{
+padding: 0;
+margin: 0;   
+font-size: 12px; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+
+    margin-top: -1em;
+    margin-left: 1em;
+    gap: 1em;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration-line: none;
+}
+
+.container-user-nav {
+    display: flex;
+    align-items: center;
+
+    margin-top: .5em;
+    margin-right: 2em;
+    gap: 1em;
+}
+
+.container-user-nav p {
+    color: var(--text-color);
+}
+
+.container-user-nav .perfil-image {
+    width: 5em;
+    height: 5em;
+
+    border-radius: 50%;
+    background-color: var(--form-buttons);
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: var(--text-color);
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+    background-color: #007AFF; /* Cor de fundo quando ativado */
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+/* Esconde o input padrão */
+.switch input {
+    display: none;
+}
+
+
+
+.div-user-img{
+height: inherit;
+width: 9vh;
+background-color: #d5d5d5;
+border-radius: 50%;
+margin-right: 5%;
+}
+
+.arrow-div{
+width: 20%;
+display: inline-flex;
+}
+
+.button-arrow{
+border-style: none;
+background-color: var(--background-color);
+cursor: pointer;
+}
+
+.bi-caret-down-fill{
+color: var(--text-color);
+display: inline;
+}
+
+.box-input-nav{
+display: flex;
+position: relative;
+align-items: center;
+height: 3vh;
+width: 40%;
+left: 30%;
+margin-bottom: 3vh;
+}
+
+.box-input-tarefa{
+position: relative;
+display: flex;
+align-items: center;
+height: inherit;
+width: 80%;
+background-color: var(--text-color);
+border-radius: 6px;
+}
+
+.inputTarefa{
+width: 94%;
+height: inherit;
+background-color: #00000000;
+border-style: none;
+}
+
+.but-imp-1{
+border-style: none;
+display: flex;
+align-items: center;
+width: 5%;
+cursor: pointer;
+border-radius: 6px;
+height: inherit;
+}
+
+.but-imp-2{
+border-style: none;
+display: flex;
+align-items: center;
+height: inherit;
+width: 4%;
+margin-left: 0.5%;
+cursor: pointer;
+border-radius: 6px;
+}
+
+.but-imp-3{
+width: 15%;
+height: 117%;
+margin-left: 1%;
+cursor: pointer;
+border-radius: 6px;
+}
+
+.p-but-imp-3{
+font-size: 0.8em;
+}
+
+.bi-calendar{
+width: 100%;
+height: auto;
+}
+
+.bi-plus{
+width: 100%;
+height: auto;
+}
+
+.box{
+position: relative;
+left: 25%;
+margin-bottom: 1%;
+}
+
+
+
+.tarefa-atrasado{
+position: relative;
+height: 4.5vh;
+width: 50%;
+background-color: var(--card-color);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0;
+margin: 0;
+border-radius: 8px;
+}
+
+.exibir-semdata{
+display: block;
+}
+
+.tarefa-semdata{
+position: relative;
+height: 4.5vh;
+width: 50%;
+background-color: var(--card-color);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0;
+margin: 0;
+border-radius: 8px;
+margin-bottom: 1%;
+}
+
+.tarefa-hoje{
+position: relative;
+height: 4.5vh;
+width: 50%;
+background-color: var(--card-color);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0;
+margin: 0;
+border-radius: 8px;
+}
+
+.tarefa-mdum{
+position: relative;
+height: 4.5vh;
+width: 50%;
+background-color: var(--card-color);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0;
+margin: 0;
+border-radius: 8px;
+}
+
+.button-tarefa{
+width: 15%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.but-check{
+border-style: none;
+background-color: var(--card-color);
+cursor: pointer;
+}
+
+.bi-check-lg{
+color: white;
+height: inherit;
+width: inherit;
+}
+
+.but-pencil{
+border-style: none;
+background-color: var(--card-color);
+cursor: pointer;
+}
+
+.bi-pencil-fill{
+color: white;
+height: inherit;
+width: inherit;
+}
+
+.but-trash{
+border-style: none;
+background-color: var(--card-color);
+cursor: pointer;
+}
+
+.bi-trash3-fill{
+color: white;
+height: inherit;
+width: inherit;
+}
+
+.a-box-item-1{
+margin-left: 2%;
+}
+
+.a-box-item-2-1{
+margin-left: 2%;
+color: #C51010;
+}
+
+.sd-box-item-1{
+text-align: center;
+margin-left: 2%;
+}
+
+.h-box-item-1{
+margin-left: 2%;
+}
+
+.h-box-item-2{
+margin-left: 2%;
+}
+
+.mdum-box-item-1{
+margin-left: 2%;
+}
+
+.mdum-box-item-2{
+margin-left: 2%;
+}
+
+.button-tarefa{
+margin-right: 2%;
+}

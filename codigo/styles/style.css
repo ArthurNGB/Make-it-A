@@ -1,0 +1,194 @@
+:root {
+    --background-color: #343434;
+    --text-color: #ffffff;
+    --card-color: #242424;
+    --form-buttons: #868686;
+    --button-hover: #1f1e1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+/* Nav */
+/* Botao Switch */
+#chk {
+    display: none;
+}
+
+.switch {
+    margin-left: 5%;
+    position: relative;
+    background-color: #777;
+    width: 40px;
+    height: 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: all .5s ease-in-out;
+}
+
+#chk:checked~.switch {
+    background-color: rgb(0, 113, 161);
+}
+
+#chk:checked~.switch .slider {
+    transform: translateX(20px);
+}
+
+/* --- */
+.container-options {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: right;
+
+    margin: .5em;
+}
+
+.container-options p {
+    cursor: pointer;
+}
+
+.container-options p:hover {
+    border-bottom: 1px solid var(--text-color);
+}
+
+.container-logo {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--form-buttons);
+}
+
+/* Main */
+/* Inputs */
+.container-inputs {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 2em;
+}
+
+.container-inputs input {
+    width: 30vw;
+    padding: .1em;
+    border-radius: 10px;
+
+    color: #000;
+}
+
+.container-inputs i {
+    color: #000;
+}
+
+.container-inputs button {
+    color: #000;
+    cursor: pointer;
+}
+
+.custom-task {
+    padding: .3em .5em;
+    border-radius: 10px;
+}
+
+.my-week {
+    padding: .5em;
+    position: relative;
+    left: .5%;
+    border-radius: 10px;
+}
+
+/* Tarefas */
+.container-tasks {
+    display: flex;
+    gap: 3em;
+    flex-direction: column;
+
+    position: absolute;
+    left: 30%;
+}
+
+.container-tasks details summary {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.tasks {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+
+    width: 40vw;
+    padding: 1em;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1em;
+}
+
+.task:first-child {
+    margin-top: 1em;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+
+    width: 50em;
+    padding: 1em;
+
+    color: #fff;
+    list-style: none;
+    border-radius: 1em;
+    background-color: #242424;
+}
+
+.task > div {
+    display: flex;
+    gap: 1em;
+}
+
+.bi-check-lg {
+    font-size: 1.2em;
+}
+
+.bi-check-lg:hover {
+    color: green;
+}
+
+.bi-pencil-fill:hover {
+    color: rgb(53, 53, 146);
+}
+
+.bi-trash3-fill:hover {
+    color: #C51010;
+}
+
+.task > div > i {
+    cursor: pointer;
+}

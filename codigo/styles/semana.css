@@ -1,0 +1,319 @@
+:root {
+    --background-color: #343434;
+    --text-color: #ffffff;
+    --card-color: #242424;
+    --form-buttons: #868686;
+    --button-hover: #1f1e1e;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: background 0.5s linear, color 0.5s linear;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+nav ul {
+    display: flex;
+    margin-top: -1em;
+    margin-left: 1em;
+    gap: 1em;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration-line: none;
+}
+
+.container-user-nav {
+    display: flex;
+    align-items: center;
+    margin-top: .5em;
+    margin-right: 2em;
+    gap: 1em;
+}
+
+.container-user-nav p {
+    color: var(--text-color);
+}
+
+.container-user-nav .perfil-image {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: var(--form-buttons);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+    background-color: #007AFF; /* Cor de fundo quando ativado */
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.switch input {
+    display: none;
+}
+
+.container-add-task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3em;
+}
+
+.container-add-task input {
+    width: 40em;
+    padding: .5em;
+    outline: none;
+}
+
+.container-add-task input::placeholder {
+    color: var(--form-buttons);
+}
+
+.container-add-task button {
+    padding: .4em;
+    cursor: pointer;
+    border: none;
+    border-radius: .7em;
+}
+
+.container-add-task button:hover {
+    background-color: var(--form-buttons);
+}
+
+.container-add-task button a {
+    color: #000;
+}
+
+.container-add-task button i {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.main-content {
+    display: grid;
+    justify-content: space-evenly;
+    padding: 3rem 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.conteudo {
+    margin: 0 auto;
+    width: 100%;
+    height: 350px;
+    max-width: 200px;
+    background: var(--card-color);
+    padding: 50px;
+    border-radius: 12px;
+}
+
+.btnAcao {
+    border-radius: 20px;
+    border: 1px solid var(--button-hover);
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: var(--form-buttons);
+    color: var(--text-color);
+    outline: none;
+}
+
+.btnAcao:hover {
+    background: var(--background-color);
+}
+
+.textoTarefa {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
+
+#janelaEdicao {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: var(--card-color);
+    border: 1px solid var(--background-color);
+    width: 415px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none;
+}
+
+#janelaEdicao.abrir {
+    display: block !important;
+}
+
+#janelaEdicaoFundo {
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+#janelaEdicaoFundo.abrir {
+    display: block !important;
+}
+
+#janelaEdicaoBtnFechar {
+    position: absolute;
+    top: -25px;
+    right: -18px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--background-color);
+    background: var(--background-color);
+    color: var(--text-color);
+    outline: none;
+}
+
+form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.frm-linha {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.frm-linha label {
+    margin-bottom: 7px;
+}
+
+.frm-linha input {
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid var(--card-color);
+    font-size: 1.2rem;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.frm-linha button {
+    background: var(--background-color);
+    border: 1px solid var(--card-color);
+    padding: 7px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    color: var(--form-buttons);
+    cursor: pointer;
+    height: 50px;
+    font-size: 1.3rem;
+    outline: none;
+}
+
+.frm-linha button:hover {
+    background: var(--form-buttons);
+}
+
+/* Tarefas na tela semanal */
+.listaTarefas {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+}
+
+.listaTarefas li {
+    width: 12vw;
+    padding: .5em;
+    color: #fff;
+    list-style: none;
+    position: relative;
+    right: 2em;
+    border-radius: 10px;
+    background-color: var(--form-buttons);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .main-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .task {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .conteudo {
+        height: auto;
+    }
+}
+/* Botão para home */
+.home-button {
+    padding: .5em;
+    border-radius: 10px;
+    cursor: pointer;
+}

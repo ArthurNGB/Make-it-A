@@ -1,0 +1,118 @@
+:root {
+    --background-color: #343434;
+    --text-color: #ffffff;
+    --card-color: #242424;
+    --form-buttons: #868686;
+    --button-hover: #1f1e1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+}
+
+#chk {
+    display: none;
+}
+
+.switch {
+    margin-left: 5%;
+    position: relative;
+    background-color: #777;
+    width: 40px;
+    height: 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: all .5s ease-in-out;
+}
+
+#chk:checked~.switch {
+    background-color: rgb(0, 113, 161);
+}
+
+#chk:checked~.switch .slider {
+    transform: translateX(20px);
+}
+
+/* --- */
+.container-options {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: right;
+
+    margin: .5em;
+}
+
+.container-options p {
+    cursor: pointer;
+}
+
+.container-options p:hover {
+    border-bottom: 1px solid var(--text-color);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+    padding: 1em;
+    border: 0;
+    border-radius: 10px;
+    background-color: var(--card-color);
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+label {
+    color: var(--text-color);
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-input input {
+    color: #000;
+}
+
+.fname {
+    width: 20em;
+    padding: .5em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.out-buttons {
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    margin-top: 4em;
+}
